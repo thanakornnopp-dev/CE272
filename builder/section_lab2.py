@@ -164,14 +164,14 @@ def get_section_lab2():
 
   <h3 class="grp" id="lab2-exam">จ. ตัวอย่างโจทย์ข้อสอบและการแสดงวิธีทำ (Exam Practice)</h3>
   <div class="stmt">
-    <p><b>โจทย์ตัวอย่าง:</b> ชุดทดสอบหาจุดศูนย์กลางแรงดันของบริษัท Essom (\(L = 280\text{ mm}, H = 200\text{ mm}, D = 100\text{ mm}, B = 75\text{ mm}\)) แขวนตุ้มน้ำหนัก \(m = 250\text{ g}\) ปรับระดับน้ำจนคานสมดุล อ่านระดับน้ำได้ \(d = 70\text{ mm}\) จงหา (ก) แรงดันน้ำตามทฤษฎี \(F\) (ข) จุดศูนย์กลางแรงดันทางทฤษฎี \(y_{cp,\text{th}}\) และ (ค) จุดศูนย์กลางแรงดันจากการทดลอง \(y_{cp,\text{exp}}\)</p>
+    <p><b>โจทย์ตัวอย่าง:</b> ชุดทดสอบหาจุดศูนย์กลางแรงดันของบริษัท Essom (\(L = 280\text{ mm}, H = 200\text{ mm}, D = 100\text{ mm}, B = 75\text{ mm}\)) มีระดับน้ำท่วมแผ่นแนวดิ่ง \(d = 70\text{ mm}\) แขวนตุ้มน้ำหนักสมดุลที่ปลายคาน \(m = 115.8\text{ g}\) จงหา (ก) แรงดันน้ำตามทฤษฎี \(F\) (ข) จุดศูนย์กลางแรงดันทางทฤษฎี \(y_{cp,\text{th}}\) และ (ค) จุดศูนย์กลางแรงดันจากการทดลอง \(y_{cp,\text{exp}}\)</p>
   </div>
 
   <h4 class="cardt">เฉลยวิธีทำ (เขียนส่งอาจารย์ตามลำดับ)</h4>
   <div class="exam">
     <div class="row">
       <div class="lab">ข้อมูลที่กำหนด</div>
-      <div class="given">$$\begin{aligned} & B = 0.075\ \text{m},\quad D = 0.100\ \text{m},\quad H = 0.200\ \text{m} \\ & L = 0.280\ \text{m},\quad m = 0.250\ \text{kg},\quad d = 0.070\ \text{m} \end{aligned}$$</div>
+      <div class="given">$$\begin{aligned} & B = 0.075\ \text{m},\quad D = 0.100\ \text{m},\quad H = 0.200\ \text{m} \\ & L = 0.280\ \text{m},\quad m = 0.1158\ \text{kg},\quad d = 0.070\ \text{m} \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">ตรวจสอบสภาวะ</div>
@@ -187,11 +187,11 @@ def get_section_lab2():
     </div>
     <div class="row">
       <div class="lab">(ค) h'' และ y_cp จากการทดลอง</div>
-      <div>$$\begin{aligned} h'' &= \frac{mgL}{F} = \frac{(0.250)(9.81)(0.280)}{1.8026} = 0.3809\ \text{m} = 380.9\ \text{mm} \\ y_{cp,\text{exp}} &= h'' - (H - d) = 380.9 - (200 - 70) = 380.9 - 130 = 250.9\ \text{mm} \end{aligned}$$<p class="nt">*หมายเหตุ: ในการทดลองจริง มวลสมดุลมักรวมแขนคานหรือมีค่าประมาณ 45 g สำหรับ d = 70 mm ซึ่งจะให้ y_cp ใกล้เคียงทฤษฎีอย่างสมบูรณ์</p></div>
+      <div>$$\begin{aligned} h'' &= \frac{mgL}{F} = \frac{(0.1158)(9.81)(0.280)}{1.8026} = 0.1765\ \text{m} = 176.5\ \text{mm} \\ y_{cp,\text{exp}} &= h'' - (H - d) = 176.5 - (200 - 70) = 176.5 - 130 = 46.5\ \text{mm} \end{aligned}$$<p class="nt">*เปรียบเทียบผลลัพธ์: \(y_{cp,\text{exp}} = 46.5\text{ mm}\) สอดคล้องกับค่าทางทฤษฎี \(y_{cp,\text{th}} = 46.7\text{ mm}\) โดยมีความคลาดเคลื่อนเพียง 0.4%</p></div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>
-      <div><span class="fin">\(F = 1.80\ \text{N},\quad y_{cp,\text{th}} = 46.7\ \text{mm}\)</span></div>
+      <div><span class="fin">\(F = 1.80\ \text{N},\quad y_{cp,\text{th}} = 46.7\ \text{mm},\quad y_{cp,\text{exp}} = 46.5\ \text{mm}\)</span></div>
     </div>
   </div>
 
