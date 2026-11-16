@@ -74,16 +74,55 @@ def build():
     else:
         print(f"✅ KaTeX Check Passed: All {double_dollars} $$ delimiters are balanced ({double_dollars//2} display equations).")
 
+    inline_open = html.count(r"\(")
+    inline_close = html.count(r"\)")
+    if inline_open != inline_close:
+        print(f"⚠️ WARNING: Unbalanced \\( ({inline_open}) and \\) ({inline_close}) delimiters!")
+        sys.exit(1)
+    else:
+        print(f"✅ KaTeX Inline Check Passed: All {inline_open} inline \\(...\\) delimiters are balanced.")
+
+    aligned_begin = html.count(r"\begin{aligned}")
+    aligned_end = html.count(r"\end{aligned}")
+    if aligned_begin != aligned_end:
+        print(f"⚠️ WARNING: Unbalanced \\begin{{aligned}} ({aligned_begin}) and \\end{{aligned}} ({aligned_end})!")
+        sys.exit(1)
+    else:
+        print(f"✅ KaTeX Aligned Check Passed: All {aligned_begin} aligned environments are balanced.")
+
+    # Validation 3: Check for syntax bugs that KaTeX hates
+    if re.search(r'\\text\{[^}]*\^', html):
+        print("⚠️ WARNING: Found ^ inside \\text{...} in HTML! This will cause KaTeX parse errors.")
+        sys.exit(1)
+    if "√" in html:
+        # Check if √ is used inside LaTeX math delimiters
+        math_matches = re.findall(r'\$\$(.*?)\$\$|\\\((.*?)\\\)', html, re.DOTALL)
+        for m in math_matches:
+            expr = m[0] or m[1]
+            if "√" in expr:
+                print("⚠️ WARNING: Found unicode √ inside math expression! Use \\sqrt{} instead.")
+                sys.exit(1)
+
+    print("✅ KaTeX Syntax Audit Passed: Zero invalid constructs found!")
+
     # Write to local repo index.html
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"✅ Written {len(html):,} bytes to {OUT_PATH}")
 
-    # Write to artifact directory
+    # Write to artifact directory and sync assets
+    import shutil
     try:
         with open(ARTIFACT_PATH, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"✅ Written copy to Artifact path: {ARTIFACT_PATH}")
+        brain_assets = os.path.dirname(ARTIFACT_PATH) + "/assets"
+        os.makedirs(brain_assets, exist_ok=True)
+        for item in os.listdir("/Users/thanaporn/.gemini/antigravity/scratch/CE272/assets"):
+            s = os.path.join("/Users/thanaporn/.gemini/antigravity/scratch/CE272/assets", item)
+            d = os.path.join(brain_assets, item)
+            shutil.copy2(s, d)
+        print(f"✅ Synchronized assets to {brain_assets}")
     except Exception as e:
         print("Artifact copy notice:", e)
 

@@ -11,7 +11,21 @@ p{margin:0 0 12px}
 hr{border:0;border-top:1.5px solid var(--rule);margin:32px 0 16px}
 .plan p{margin:0 0 8px;padding-left:5.2em;text-indent:-5.2em}
 .plan b.l,.step b.l{display:inline-block;min-width:5.2em;text-indent:0}
-.katex-display{margin:.85em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+/* KaTeX Formula Integrity - Never allow mathematical formulas to break across lines */
+.katex, .katex .base, .katex * {
+  white-space: nowrap !important;
+}
+.katex-display {
+  margin: .85em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+  -webkit-overflow-scrolling: touch;
+}
+.katex-display > .katex {
+  white-space: nowrap !important;
+  text-align: left;
+}
 figure{margin:22px 0}
 figure svg{display:block;width:100%;height:auto;max-width:700px;margin:0 auto;font-family:"Sarabun",sans-serif}
 figcaption{text-align:center;font-size:15px;color:var(--gray);margin-top:6px}
@@ -20,7 +34,35 @@ th,td{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);paddi
 th{border-top:1.5px solid var(--ink);background:var(--hover);font-weight:600;color:var(--navy)}
 caption{caption-side:top;font-size:15px;color:var(--gray);padding-bottom:6px;font-weight:500}
 .ans{margin-top:24px;font-weight:700}
-.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 26px;border:1.5px solid var(--ink);background:var(--bg)}
+.tw table{width:100%;min-width:1040px;border-collapse:collapse;font-size:15px;margin:0}
+.tw caption{padding:10px 14px;font-size:15px;font-weight:600;color:var(--navy);background:var(--hover);border-bottom:1.5px solid var(--ink);text-align:left}
+.tw th,.tw td{padding:11px 14px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);vertical-align:middle;text-align:left}
+.tw th{background:var(--hover);font-weight:700;color:var(--navy);white-space:nowrap;border-top:0}
+.tw tr:hover td{background:var(--hover)}
+.tw .td-num{width:50px;text-align:center;font-weight:700;color:var(--navy)}
+.tw .td-name{width:190px;font-weight:600;color:var(--navy)}
+.tw .td-name small{display:block;font-size:12.5px;color:var(--gray);font-weight:400;margin-top:2px}
+.tw .td-eq{min-width:380px;text-align:left}
+.tw .td-vars{min-width:190px;font-size:14px}
+.tw .td-tools{min-width:190px;font-size:13.5px;color:var(--gray)}
+.tw .eq-row{display:flex;flex-direction:column;gap:5px}
+.tw .eq-pill{display:inline-block;background:var(--hover);border:1px solid var(--rule);padding:4px 10px;border-radius:4px;white-space:nowrap!important;font-size:15px}
+.tw .eq-pill .katex{white-space:nowrap!important}
+.tw .eq-subnote{font-size:13px;color:var(--gray);margin-top:3px;white-space:nowrap!important}
+.tw .badge-sm{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;background:var(--navy);color:var(--bg);border-radius:3px;margin-right:4px;vertical-align:middle}
+
+/* Formula Study Cards */
+.formula-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:22px 0 34px}
+.formula-card{border:1.5px solid var(--ink);background:var(--bg);padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.formula-card:hover{border-color:var(--navy);background:var(--hover)}
+.formula-card-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.formula-card-title{font-weight:700;color:var(--navy);font-size:15.5px}
+.formula-card-badge{font-size:12px;font-weight:700;padding:2px 8px;background:var(--hover);border:1px solid var(--rule);color:var(--gray)}
+.formula-card-body{background:var(--hover);border-left:3px solid var(--navy);padding:8px 12px;margin:4px 0;overflow-x:auto;white-space:nowrap!important}
+.formula-card-body .katex{white-space:nowrap!important}
+.formula-card-desc{font-size:13.5px;color:var(--gray);line-height:1.5}
+.formula-card-trap{font-size:13px;color:var(--red);background:rgba(179,32,31,0.06);padding:6px 10px;border-left:2px solid var(--red);line-height:1.5}
 
 .exam{border:1.5px solid var(--ink);padding:10px 22px 20px;margin:14px 0 20px;background:var(--bg)}
 .exam .row{display:grid;grid-template-columns:8.5em 1fr;gap:0 16px;align-items:center;padding:12px 0;border-top:1px solid var(--rule);min-height:48px}
@@ -31,8 +73,8 @@ caption{caption-side:top;font-size:15px;color:var(--gray);padding-bottom:6px;fon
 .exam .katex-display>.katex{text-align:left}
 .exam .given{color:var(--blue)}
 .exam .no{color:var(--red);font-weight:700}
-.exam .fin{border:2px solid var(--red);padding:6px 18px;margin:8px 0 4px;display:inline-block;color:var(--red);font-weight:700;white-space:nowrap!important;max-width:100%;overflow-x:auto;overflow-y:hidden;box-sizing:border-box;line-height:1.5}
-.exam .fin *{white-space:nowrap!important}
+.fin,.exam .fin{border:2px solid var(--red);padding:6px 18px;margin:8px 0 4px;display:inline-block;color:var(--red);font-weight:700;white-space:nowrap!important;max-width:100%;overflow-x:auto;overflow-y:hidden;box-sizing:border-box;line-height:1.5}
+.fin *,.exam .fin *{white-space:nowrap!important}
 @media(max-width:900px){.exam .row{grid-template-columns:1fr;gap:6px 0;padding:10px 0}.exam .lab{font-size:14px;padding-top:2px}}
 
 :root{
