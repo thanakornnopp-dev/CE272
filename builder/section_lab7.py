@@ -157,7 +157,7 @@ def get_section_lab7():
     </div>
     <div class="row">
       <div class="lab">แก้สมการหา QA, QB</div>
-      <div>$$\begin{aligned} Q_{\text{total}} &= Q_A + Q_B = 6.1968 Q_B + Q_B = 7.1968 Q_B \\ 0.0080 &= 7.1968 Q_B \\ Q_B &= \frac{0.0080}{7.1968} = 0.001112\ \text{m}^3/\text{s} = 1.11\ \text{L/s} \\ Q_A &= 0.0080 - 0.001112 = 0.006888\ \text{m}^3/\text{s} = 6.89\ \text{L/s}\quad \htmlClass{ok}{(\text{OK})} \end{aligned}$$</div>
+      <div>$$\begin{aligned} Q_{\text{total}} &= Q_A + Q_B = 6.1968 Q_B + Q_B = 7.1968 Q_B \\ 0.0080 &= 7.1968 Q_B \\ Q_B &= \frac{0.0080}{7.1968} = 0.001112\ \text{m}^3/\text{s} = 1.11\ \text{L/s} \\ Q_A &= 0.0080 - 0.001112 = 0.006888\ \text{m}^3/\text{s} = 6.89\ \text{L/s} \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

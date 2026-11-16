@@ -140,7 +140,7 @@ def get_section_lab8():
     </div>
     <div class="row">
       <div class="lab">(ก) สัมประสิทธิ์ Cv</div>
-      <div>$$\begin{aligned} x &= 2 C_v \sqrt{yH} \\ 0.350 &= 2 C_v \sqrt{(0.080)(0.400)} = 2 C_v \sqrt{0.032} = 2 C_v (0.17888) = 0.35777 C_v \\ C_v &= \frac{0.350}{0.35777} = 0.9783\quad \htmlClass{ok}{(\text{ปกติ 0.95-0.98})} \end{aligned}$$</div>
+      <div>$$\begin{aligned} x &= 2 C_v \sqrt{yH} \\ 0.350 &= 2 C_v \sqrt{(0.080)(0.400)} = 2 C_v \sqrt{0.032} = 2 C_v (0.17888) = 0.35777 C_v \\ C_v &= \frac{0.350}{0.35777} = 0.9783\quad (\text{ปกติ 0.95-0.98}) \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">(ข) สัมประสิทธิ์ Cc</div>

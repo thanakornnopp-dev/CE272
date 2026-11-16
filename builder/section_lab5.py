@@ -129,7 +129,7 @@ def get_section_lab5():
     </div>
     <div class="row">
       <div class="lab">(ค) สัมประสิทธิ์ Manning n</div>
-      <div>$$\begin{aligned} V &= \frac{1}{n} R_h^{2/3} S_0^{1/2} \\ n &= \frac{R_h^{2/3} S_0^{1/2}}{V} \\ &= \frac{(0.03281)^{2/3} \sqrt{4.3633 \times 10^{-3}}}{0.3968} \\ &= \frac{(0.1025)(0.06605)}{0.3968} = 0.01706\quad \htmlClass{ok}{(\text{ค่าสมเหตุสมผลสำหรับพื้นผิวแล็บ})} \end{aligned}$$</div>
+      <div>$$\begin{aligned} V &= \frac{1}{n} R_h^{2/3} S_0^{1/2} \\ n &= \frac{R_h^{2/3} S_0^{1/2}}{V} \\ &= \frac{(0.03281)^{2/3} \sqrt{4.3633 \times 10^{-3}}}{0.3968} \\ &= \frac{(0.1025)(0.06605)}{0.3968} = 0.01706\quad (\text{สมเหตุสมผลสำหรับพื้นผิวแล็บ}) \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

@@ -140,7 +140,7 @@ def get_section_lab6():
     </div>
     <div class="row">
       <div class="lab">(ค) สัมประสิทธิ์ Cd</div>
-      <div>$$C_d = \frac{Q_{\text{act}}}{Q_{\text{th}}} = \frac{8.2418 \times 10^{-4}}{1.378 \times 10^{-3}} = 0.5981\quad \htmlClass{ok}{(\text{ช่วงปกติของฝายสันคมคือ 0.58-0.62})}$$</div>
+      <div>$$C_d = \frac{Q_{\text{act}}}{Q_{\text{th}}} = \frac{8.2418 \times 10^{-4}}{1.378 \times 10^{-3}} = 0.5981\quad (\text{ช่วงปกติ 0.58-0.62})$$</div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

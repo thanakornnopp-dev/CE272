@@ -64,7 +64,7 @@ def get_section_lab9():
         </li>
         <li><b>2. เครื่องสูบน้ำต่อแบบอนุกรม (Series Pumps):</b>
           <p>ปั๊มตัวแรกดูดน้ำจากถังพัก Sump Tank ซึ่งเปิดสู่บรรยากาศ ความดันเกจทางเข้าจึงถือเป็นศูนย์ (\(h_1 = 0\)) และใช้ระยะท่อดูดของโต๊ะ:</p>
-          $$H_d = h_d(\text{outlet}) - h_d(\text{bench}) = 0.17 - 0.24 = \mathbf{-0.07\ \text{m}}\quad \htmlClass{no}{(\text{ค่าติดลบ!})}$$
+          $$H_d = h_d(\text{outlet}) - h_d(\text{bench}) = 0.17 - 0.24 = \mathbf{-0.07\ \text{m}}\quad (\text{ค่าติดลบ!})$$
           $$H = (h_0 - 0) - 0.07 = h_0 - 0.07$$
           <p class="gq">• ผลลัพธ์: Total Head รวมเพิ่มขึ้นเป็น <b>2 เท่า (\(H_{\text{series}} \approx 2 H_1\))</b> ที่อัตราการไหล \(Q\) เท่าเดิม</p>
         </li>
@@ -288,7 +288,7 @@ def get_section_lab9():
     </div>
     <div class="row">
       <div class="lab">(ก) เฮดรวม H</div>
-      <div>$$\begin{aligned} H &= (h_0 - h_1) + H_d \\ &= (14.8 - 0) + (-0.07) = 14.73\ \text{m}\quad \htmlClass{ok}{(\text{อย่าลืมเครื่องหมายลบ})} \end{aligned}$$</div>
+      <div>$$\begin{aligned} H &= (h_0 - h_1) + H_d \\ &= (14.8 - 0) + (-0.07) = 14.73\ \text{m}\quad (\text{อย่าลืมเครื่องหมายลบ}) \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">(ข) อัตราการไหล Q</div>

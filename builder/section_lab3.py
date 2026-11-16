@@ -123,7 +123,7 @@ def get_section_lab3():
     </div>
     <div class="row">
       <div class="lab">(ข) ถ้วยครึ่งวงกลม 180°</div>
-      <div>$$\begin{aligned} F_{\text{hemi}} &= 2\rho Q v = 2 \times 4.974 = 9.947\ \text{N}\quad \htmlClass{ok}{(\text{เป็น 2 เท่า})} \\ m_{\text{hemi}} &= \frac{9.947}{9.81} = 1.0140\ \text{kg} = 1014.0\ \text{g} \end{aligned}$$</div>
+      <div>$$\begin{aligned} F_{\text{hemi}} &= 2\rho Q v = 2 \times 4.974 = 9.947\ \text{N}\quad (\text{เป็น 2 เท่า}) \\ m_{\text{hemi}} &= \frac{9.947}{9.81} = 1.0140\ \text{kg} = 1014.0\ \text{g} \end{aligned}$$</div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

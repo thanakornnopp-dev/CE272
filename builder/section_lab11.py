@@ -143,7 +143,7 @@ def get_section_lab11():
     </div>
     <div class="row">
       <div class="lab">(ค) อัตราการไหล Qth</div>
-      <div>$$\begin{aligned} A_c &= b \cdot y_c = (0.15)(0.1333) = 0.0200\ \text{m}^2 \\ Q_{\text{th}} &= V_c A_c = (1.1437)(0.0200) = 0.02287\ \text{m}^3/\text{s} \\ &= 22.87\ \text{L/s} = 82.35\ \text{m}^3/\text{hr}\quad \htmlClass{ok}{(\text{ตรงกับสูตร Q = (2/3)^1.5 √(g) b y1^1.5})} \end{aligned}$$</div>
+      <div>$$\begin{aligned} A_c &= b \cdot y_c = (0.15)(0.1333) = 0.0200\ \text{m}^2 \\ Q_{\text{th}} &= V_c A_c = (1.1437)(0.0200) = 0.02287\ \text{m}^3/\text{s} \\ &= 22.87\ \text{L/s} = 82.35\ \text{m}^3/\text{hr} \end{aligned}$$<p class="nt" style="color:var(--green);font-weight:600;margin:6px 0 0;">(ตรงกับสูตรลัด \(Q = (\frac{2}{3})^{1.5} \sqrt{g}\, b\, y_1^{1.5}\))</p></div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

@@ -139,7 +139,7 @@ def get_section_lab4():
     </div>
     <div class="row">
       <div class="lab">(ค) สัมประสิทธิ์ Cd</div>
-      <div>$$C_d = \frac{Q_{\text{act}}}{Q_{\text{th}}} = \frac{3.401 \times 10^{-4}}{4.139 \times 10^{-4}} = 0.8217\quad \htmlClass{ok}{(\text{สมเหตุสมผล})}$$</div>
+      <div>$$C_d = \frac{Q_{\text{act}}}{Q_{\text{th}}} = \frac{3.401 \times 10^{-4}}{4.139 \times 10^{-4}} = 0.8217\quad (\text{สมเหตุสมผล})$$</div>
     </div>
     <div class="row">
       <div class="lab">คำตอบสุดท้าย</div>

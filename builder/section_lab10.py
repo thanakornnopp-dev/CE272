@@ -129,7 +129,7 @@ def get_section_lab10():
     </div>
     <div class="row">
       <div class="lab">(ข) สัมประสิทธิ์ Cc</div>
-      <div>$$C_c = \frac{y_1}{y_g} = \frac{3.1\ \text{cm}}{5.0\ \text{cm}} = 0.6200\quad \htmlClass{ok}{(\text{ปกติ 0.60-0.64})}$$</div>
+      <div>$$C_c = \frac{y_1}{y_g} = \frac{3.1\ \text{cm}}{5.0\ \text{cm}} = 0.6200\quad (\text{ปกติ 0.60-0.64})$$</div>
     </div>
     <div class="row">
       <div class="lab">(ค) Froude Fr0 และ Fr1</div>

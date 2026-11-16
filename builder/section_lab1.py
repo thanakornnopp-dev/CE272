@@ -120,7 +120,7 @@ def get_section_lab1():
     </div>
     <div class="row">
       <div class="lab">(ข) Q ในหน่วย SI (m³/s)</div>
-      <div>$$\Delta V = 30 \times 10^{-3}\ \text{m}^3$$$$Q = \frac{30 \times 10^{-3}\ \text{m}^3}{48.5\ \text{s}} = 6.186 \times 10^{-4}\ \text{m}^3/\text{s}\quad \htmlClass{ok}{(\text{OK})}$$</div>
+      <div>$$\Delta V = 30 \times 10^{-3}\ \text{m}^3,\quad Q = \frac{30 \times 10^{-3}\ \text{m}^3}{48.5\ \text{s}} = 6.186 \times 10^{-4}\ \text{m}^3/\text{s}$$</div>
     </div>
     <div class="row">
       <div class="lab">(ค) Q ในหน่วย m³/hr</div>
