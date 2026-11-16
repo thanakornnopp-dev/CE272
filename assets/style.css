@@ -22,17 +22,18 @@ caption{caption-side:top;font-size:15px;color:var(--gray);padding-bottom:6px;fon
 .ans{margin-top:24px;font-weight:700}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
 
-.exam{border:1.5px solid var(--ink);padding:8px 20px 18px;margin:12px 0 16px;background:var(--bg)}
-.exam .row{display:grid;grid-template-columns:8.2em 1fr;gap:0 14px;align-items:baseline;padding:4px 0;border-top:1px solid var(--rule)}
+.exam{border:1.5px solid var(--ink);padding:10px 22px 20px;margin:14px 0 20px;background:var(--bg)}
+.exam .row{display:grid;grid-template-columns:8.5em 1fr;gap:0 16px;align-items:center;padding:12px 0;border-top:1px solid var(--rule);min-height:48px}
 .exam .row:first-child{border-top:0}
 .exam .row>div{min-width:0}
-.exam .lab{font-size:15px;color:var(--gray);font-weight:500}
-.exam .katex-display{margin:.3em 0;text-align:left}
+.exam .lab{font-size:15px;color:var(--gray);font-weight:600;padding:2px 0}
+.exam .katex-display{margin:.5em 0;text-align:left;padding:6px 0;overflow-x:auto;overflow-y:hidden}
 .exam .katex-display>.katex{text-align:left}
 .exam .given{color:var(--blue)}
 .exam .no{color:var(--red);font-weight:700}
-.exam .fin{border:2px solid var(--red);padding:2px 16px;margin:10px 0 0;display:inline-block;color:var(--red);font-weight:700}
-@media(max-width:900px){.exam .row{grid-template-columns:1fr}.exam .lab{font-size:14px;padding-top:6px}}
+.exam .fin{border:2px solid var(--red);padding:6px 18px;margin:8px 0 4px;display:inline-block;color:var(--red);font-weight:700;white-space:nowrap!important;max-width:100%;overflow-x:auto;overflow-y:hidden;box-sizing:border-box;line-height:1.5}
+.exam .fin *{white-space:nowrap!important}
+@media(max-width:900px){.exam .row{grid-template-columns:1fr;gap:6px 0;padding:10px 0}.exam .lab{font-size:14px;padding-top:2px}}
 
 :root{
   color-scheme:light;
